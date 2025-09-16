@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Custom animations and small utilities not covered by Tailwind out-of-the-box */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in { animation: fadeIn 0.5s ease-in; }
+
+/* Optional hover helpers used across the UI */
+.card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+.nav-link:hover { transform: translateY(-2px); }
+
+/* Leaflet map height helper when needed */
+.map-container { height: 24rem; }
